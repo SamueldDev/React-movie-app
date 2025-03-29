@@ -7,12 +7,15 @@ body{
   background-color: #434646;
   color: white;
   font-family: "Karla", sans-serif;
+  margin: 0;
+ 
 }
 
 .container{
   width: 95%;
   max-width: 900px;
   margin: 0 auto;
+  flex: 1;
 
 }
 
@@ -183,6 +186,10 @@ input[type="text"]{
 
 
 @media(min-width:480px){
+
+  .cinema-cont{
+    margin-top: 100px;
+  }
 
   .nav-menu{
   display: none;
@@ -432,4 +439,28 @@ input[type="text"]{
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 15px;
+}
+
+.app-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+ 
+}
+
+
+.footer{
+  background-color: #34577c;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+
+}
+
+.footer p{
+  color: rgba(222, 222, 250, 0.7);
+  font-size: 9px;
 }

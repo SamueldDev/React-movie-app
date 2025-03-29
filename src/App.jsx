@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import SearchDisplay from "./components/SearchDisplay";
 import WatchList from "./components/WatchList";
 import "./App.css";
+import Footer from "./components/footer";
 
 export default function App() {
     const [watchlist, setWatchlist] = useState([]);
@@ -24,11 +25,12 @@ export default function App() {
     }
 
     return (
-
-        <Router>
-            <div className="container">
+        <>
+             <Router>
+                <div className="app-container">
+                <div className="container">
             <Header setMovies={setMovies} />
-            
+
             <Routes>
                 <Route path="/" element={
                     <SearchDisplay 
@@ -46,8 +48,16 @@ export default function App() {
                     />
                 } />
             </Routes>
+
             </div>
+                </div>
           
+            <Footer />
         </Router>
+        
+
+        </>
+
+       
     );
 }
