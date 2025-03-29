@@ -10,6 +10,7 @@ import WatchList from "./components/WatchList";
 import "./App.css";
 import Footer from "./components/footer";
 
+
 export default function App() {
     const [watchlist, setWatchlist] = useState([]);
     const [movies, setMovies] = useState([]);
