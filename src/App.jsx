@@ -50,7 +50,7 @@ export default function App() {
             </Routes>
 
             </div>
-                </div>
+            </div>
           
             <Footer />
         </Router>
