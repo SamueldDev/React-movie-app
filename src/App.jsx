@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import SearchDisplay from "./components/SearchDisplay";
 import WatchList from "./components/WatchList";
 import "./App.css";
-import Footer from "./components/footer";
+import Footer from "../Footer"
 
 
 export default function App() {
@@ -49,7 +49,7 @@ export default function App() {
                     />
                 } />
             </Routes>
-
+                
             </div>
             </div>
           
